@@ -1,0 +1,22 @@
+{
+  "name": "DemoLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of DemoLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/theanh90/DemoLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "theanh90": "theanh90@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/theanh90/DemoLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DemoLibrary/Classes/**/*"
+}

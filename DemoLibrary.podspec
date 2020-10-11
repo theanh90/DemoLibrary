@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DemoLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DemoLibrary.'
+  s.summary          = 'Make a demo for my first Swift library'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+I would like to learn how to create a library for iOS by Swift. This project is how I learned
                        DESC
 
   s.homepage         = 'https://github.com/theanh90/DemoLibrary'
@@ -26,9 +26,10 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'theanh90' => 'theanh90@gmail.com' }
   s.source           = { :git => 'https://github.com/theanh90/DemoLibrary.git', :tag => s.version.to_s }
+  s.swift_version	 = '4.0'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'DemoLibrary/Classes/**/*'
   
