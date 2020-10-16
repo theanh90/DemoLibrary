@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import DemoLibrary
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+		updateUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,5 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+	// MARK: - Private method
+	private func updateUI() {
+		let redView = ColorView(frame: CGRect(x: 100, y: 400, width: 100, height: 100), color: UIColor.red)
+		redView.cornerRadius = 20
+		view.addSubview(redView)
+	}
 }
 
