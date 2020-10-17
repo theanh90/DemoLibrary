@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		143AD3C9497E32EE7A0DE951DEB8257E /* Pods-DemoLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D926A8A26422CF3E95C2D8B25DDE04A7 /* Pods-DemoLibrary_Tests-dummy.m */; };
+		4C41BD7E253AE2C40062DA31 /* DropIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C41BD7D253AE2C40062DA31 /* DropIn.storyboard */; };
+		4C41BD81253AE5680062DA31 /* DropInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41BD80253AE5680062DA31 /* DropInViewController.swift */; };
+		4C9173B6253AAC88009FA5D7 /* DropInComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9173B5253AAC88009FA5D7 /* DropInComponent.swift */; };
 		6C6E5BD025399C6F00AD2467 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6E5BCF25399C6F00AD2467 /* ColorView.swift */; };
 		8791708930A3146396E1A9098C13DA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8DA3B9915DA489369DBC705782AED74E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -48,6 +51,9 @@
 		3B05740E3ACFD06EA2F8F432E45C9E5C /* DemoLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DemoLibrary-Info.plist"; sourceTree = "<group>"; };
 		44D2D55BCC2F280C925AB4129A3C8F73 /* DemoLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DemoLibrary-prefix.pch"; sourceTree = "<group>"; };
 		468E3D4F0326C155B778B7D6F9479B63 /* Pods-DemoLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4C41BD7D253AE2C40062DA31 /* DropIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DropIn.storyboard; sourceTree = "<group>"; };
+		4C41BD80253AE5680062DA31 /* DropInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInViewController.swift; sourceTree = "<group>"; };
+		4C9173B5253AAC88009FA5D7 /* DropInComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropInComponent.swift; sourceTree = "<group>"; };
 		6C6E5BCF25399C6F00AD2467 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		6F91447D53B512573E578BD3A5FBF396 /* Pods-DemoLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		772DD9476EC1EBD4C3C203791F209188 /* DemoLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DemoLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -134,10 +140,20 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		4C41BD7F253AE54B0062DA31 /* DropIn */ = {
+			isa = PBXGroup;
+			children = (
+				4C41BD80253AE5680062DA31 /* DropInViewController.swift */,
+			);
+			path = DropIn;
+			sourceTree = "<group>";
+		};
 		6C6E5BCD25399B8100AD2467 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4C41BD7F253AE54B0062DA31 /* DropIn */,
 				6C6E5BCF25399C6F00AD2467 /* ColorView.swift */,
+				4C9173B5253AAC88009FA5D7 /* DropInComponent.swift */,
 			);
 			name = Core;
 			path = DemoLibrary/Classes/Core;
@@ -146,6 +162,7 @@
 		6C6E5BCE25399BD800AD2467 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C41BD7D253AE2C40062DA31 /* DropIn.storyboard */,
 			);
 			name = Resources;
 			path = DemoLibrary/Classes/Resources;
@@ -373,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C41BD7E253AE2C40062DA31 /* DropIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C41BD81253AE5680062DA31 /* DropInViewController.swift in Sources */,
 				6C6E5BD025399C6F00AD2467 /* ColorView.swift in Sources */,
 				DAD817D3C7A4E383B09DF3EB16EC86B1 /* DemoLibrary-dummy.m in Sources */,
+				4C9173B6253AAC88009FA5D7 /* DropInComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

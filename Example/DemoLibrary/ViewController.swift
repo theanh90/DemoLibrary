@@ -26,7 +26,20 @@ class ViewController: UIViewController {
 	private func updateUI() {
 		let redView = ColorView(frame: CGRect(x: 100, y: 400, width: 100, height: 100), color: UIColor.red)
 		redView.cornerRadius = 20
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(gotoLibraryScreen))
+        redView.addGestureRecognizer(tap)
+        
 		view.addSubview(redView)
 	}
+    
+    @objc private func gotoLibraryScreen() {
+        print("---xxx clicked")
+        let dropIn = DropInComponent()
+        dropIn.title = "ahihi"
+        if let viewController = dropIn.mainVC {
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }
 
