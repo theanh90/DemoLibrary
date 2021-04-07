@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Setup local framework that was used in multiple project.
+Refer to the url: https://medium.com/temy/ios-multiple-projects-workspace-setup-672ba96649e3 
+
 ## Installation
 
 DemoLibrary is available through [CocoaPods](https://cocoapods.org). To install
